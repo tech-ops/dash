@@ -87,6 +87,8 @@ services:
     ports:
       - 80:80
       - 443:443
+    networks:
+      - dash
     depends_on:
       - grafana
     restart: unless-stopped
